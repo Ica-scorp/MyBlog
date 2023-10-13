@@ -30,7 +30,6 @@ spring:
       static-locations: classpath:static/,file:static/
 
 
-
 mybatis-plus:
   type-aliases-package: com.example.blog.entity
   configuration:
@@ -39,16 +38,15 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     auto-mapping-behavior: full
 
-  mapper-locations: classpath*:mapper/*Mapper.xml
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
   global-config:
     banner: true
     db-config:
-      #????  0:"???ID??", 1:"????ID",2:"????ID (??????ID)", 3:"????ID UUID";
-      id-type: uuid
+      id-type: ASSIGN_UUID
       logic-not-delete-value: 1
       logic-delete-value: 0
 
 
 logging:
   level:
-    root: error #????DEBUG,INFO,WARN,ERROR
+    root: info

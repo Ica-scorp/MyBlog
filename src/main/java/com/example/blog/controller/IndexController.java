@@ -16,9 +16,21 @@ public class IndexController {
     @GetMapping("/index")
     @ResponseBody
     public String index(){
-        for(User user: userService.list()){
-            System.out.println(user.getUserName());
+        if(!userService.list().isEmpty()){
+            for(User user: userService.list()){
+                System.out.println(user.getUserId());
+//                if(user==null){
+//                    System.out.println("nullptr");
+//                }else{
+//                    System.out.println(user.getUserId());
+//                }
+
+            }
+            return "empty";
         }
-        return "ok";
+//        for(User user: userService.list()){
+//            System.out.println(user.getUserName());
+//        }
+        return "haha";
     }
 }

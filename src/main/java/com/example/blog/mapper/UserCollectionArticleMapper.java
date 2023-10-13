@@ -2,6 +2,7 @@ package com.example.blog.mapper;
 
 import com.example.blog.entity.UserCollectionArticle;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * @author jobob
  * @since 2023-10-10
  */
-@Repository
+@Mapper
 public interface UserCollectionArticleMapper extends BaseMapper<UserCollectionArticle> {
 
 }

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * @author jobob
  * @since 2023-10-10
  */
-@Repository
+@Mapper
 public interface CommentMapper extends BaseMapper<Comment> {
 
 }
