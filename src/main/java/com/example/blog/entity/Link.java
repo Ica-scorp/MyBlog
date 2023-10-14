@@ -2,6 +2,7 @@ package com.example.blog.entity;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
@@ -52,7 +53,7 @@ public class Link implements Serializable {
     /**
      * 添加友情连接的时间
      */
-    private LocalDateTime linkAddTime;
+    private Date linkAddTime;
 
 
 }

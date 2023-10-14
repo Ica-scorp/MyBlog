@@ -19,18 +19,10 @@ public class IndexController {
         if(!userService.list().isEmpty()){
             for(User user: userService.list()){
                 System.out.println(user.getUserId());
-//                if(user==null){
-//                    System.out.println("nullptr");
-//                }else{
-//                    System.out.println(user.getUserId());
-//                }
 
             }
             return "empty";
         }
-//        for(User user: userService.list()){
-//            System.out.println(user.getUserName());
-//        }
         return "haha";
     }
 }

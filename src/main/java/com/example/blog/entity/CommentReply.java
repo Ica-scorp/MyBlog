@@ -2,6 +2,7 @@ package com.example.blog.entity;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
@@ -34,7 +35,7 @@ public class CommentReply implements Serializable {
 
     private String replyContent;
 
-    private LocalDateTime commentReplyTime;
+    private Date commentReplyTime;
 
 
 }

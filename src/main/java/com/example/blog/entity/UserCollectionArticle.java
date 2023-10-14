@@ -2,6 +2,7 @@ package com.example.blog.entity;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
@@ -42,7 +43,7 @@ public class UserCollectionArticle implements Serializable {
     /**
      * 收藏时间
      */
-    private LocalDateTime userCollectionArticleTime;
+    private Date userCollectionArticleTime;
 
 
 }

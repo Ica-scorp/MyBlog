@@ -2,6 +2,7 @@ package com.example.blog.entity;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
@@ -36,7 +37,7 @@ public class SysUser implements Serializable {
 
     private String sysUserPassword;
 
-    private LocalDateTime sysUserRegisterTime;
+    private Date sysUserRegisterTime;
 
 
 }
