@@ -19,7 +19,9 @@ public class MybatisPlusConfig {
     @Bean
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
-        interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.H2));
+        PaginationInnerInterceptor pageInterceptor = new PaginationInnerInterceptor((DbType.MYSQL));
+        pageInterceptor.setMaxLimit(1000L);
+        interceptor.addInnerInterceptor(pageInterceptor);
         return interceptor;
     }
 
